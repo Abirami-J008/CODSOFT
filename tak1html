@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Flow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .welcome-screen {
+      text-align: center;
+    }
+    .welcome-screen h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .welcome-screen p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .signup-screen {
+      padding: 20px;
+    }
+    .signup-screen h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .signup-screen form {
+      margin-bottom: 20px;
+    }
+    .signup-screen input[type="email"],
+    .signup-screen input[type="password"] {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .signup-screen button[type="submit"] {
+      width: 100%;
+      height: 40px;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-screen {
+      padding: 20px;
+    }
+    .login-screen h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .login-screen form {
+      margin-bottom: 20px;
+    }
+    .login-screen input[type="email"],
+    .login-screen input[type="password"] {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-screen button[type="submit"] {
+      width: 100%;
+      height: 40px;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="welcome-screen">
+      <h1>Welcome</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button>Sign up</button>
+      <p>Already have an account? <a href="                
+    </div>
+    <div class="signup-screen" style="display: none;">
+      <h1>Sign up</h1>
+      <form>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button type="submit">Sign up</button>
+      </form>
+      <p>Already have an account? <a href="#">Login</a></p>
+    </div>
+    <div class="login-screen" style="display: none;">
+      <h1>Login</h1>
+      <form>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="                  
+    </div>
+  </div>
+  <script>
+    const welcomeScreen = document.querySelector('.welcome-screen');
+    const signupScreen = document.querySelector('.signup-screen');
+    const loginScreen = document.querySelector('.login-screen');
+    const signupButton = welcomeScreen.querySelector('button');
+    const loginLink = welcomeScreen.querySelector('a');
+    const signupLink = loginScreen.querySelector('a');
+    const loginLinkSignup = signupScreen.querySelector('a');
+
+    signupButton.addEventListener('click', () => {
+      welcomeScreen.style.display = 'none';
+      signupScreen.style.display = 'block';
+    });
+
+    loginLink.addEventListener('click', () => {
+      welcomeScreen.style.display = 'none';
+      loginScreen.style.display = 'block';
+    });
+
+    signupLink.addEventListener('click', () => {
+      loginScreen.style.display = 'none';
+      signupScreen.style.display = 'block';
+    });
+
+    loginLinkSignup.addEventListener('click', () => {
+      signupScreen.style.display = 'none';
