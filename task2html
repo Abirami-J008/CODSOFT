@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weekly Newsletter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      background-color: #f7f7f7;
+      padding: 20px;
+      text-align: center;
+    }
+    .header img {
+      width: 100px;
+      height: 100px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .feature {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+    .feature img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    .footer {
+      background-color: #f7f7f7;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .footer a {
+      text-decoration: none;
+      color: #337ab7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="logo.png" alt="Logo">
+      <h1>Weekly Newsletter</h1>
+    </div>
+    <div class="content">
+      <h2>Don't miss out our BIG news!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+      <button>Go to your account</button>
+      <h2>Checkout our amazing features</h2>
+      <div class="features">
+        <div class="feature">
+          <img src="timer.png" alt="Timer">
+          <h3>Timer</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="feature">
+          <img src="measure-tool.png" alt="Measure Tool">
+          <h3>Measure tool</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="feature">
+          <img src="slider.png" alt="Slider">
+          <h3>Slider</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="feature">
+          <img src="users.png" alt="Users">
+          <h3>Users</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <button>Go to your account</button>
+    </div>
+    <div class="footer">
+      <p>You received this email because you signed up on our website or made a purchase from us.</p>
+      <p><a href="#">Unsubscribe</a></p>
+      <p>&copy; 2023 Company Name. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
